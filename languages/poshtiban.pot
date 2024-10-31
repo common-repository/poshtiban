@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-12-31 21:17+0330\n"
+"PO-Revision-Date: 2015-12-31 21:18+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class.MailerliteIntegration.php:12 class.MailerliteIntegration.php:13
+#: class.MailerliteIntegration.php:24
+msgid "Mailerlite Integration"
+msgstr ""
+
+#: class.MailerliteIntegration.php:46
+msgid "Settings"
+msgstr ""
+
+#: class.MailerliteIntegration.php:53
+msgid "Mailelite API Key"
+msgstr ""
+
+#: class.MailerliteIntegration.php:61
+msgid "Mailelite Group"
+msgstr ""
+
+#: class.MailerliteIntegration.php:99 widget_mailerlite.php:74
+msgid "ERROR!"
+msgstr ""
+
+#: class.MailerliteIntegration.php:108 widget_mailerlite.php:81
+msgid "User"
+msgstr ""
+
+#: widget_mailerlite.php:11
+msgid "Mailerlite Widget"
+msgstr ""
+
+#: widget_mailerlite.php:12
+msgid "Displays the mailerlite subscription form"
+msgstr ""
+
+#: widget_mailerlite.php:30
+msgid "Oops! Something went wrong. Please try again later."
+msgstr ""
+
+#: widget_mailerlite.php:31
+msgid "Email"
+msgstr ""
+
+#: widget_mailerlite.php:32
+msgid "Done!"
+msgstr ""
+
+#: widget_mailerlite.php:32
+msgid "Subscribe"
+msgstr ""
+
+#: widget_mailerlite.php:51
+msgid "Subscription Form"
+msgstr ""
+
+#: widget_mailerlite.php:60
+msgid "Title:"
+msgstr ""

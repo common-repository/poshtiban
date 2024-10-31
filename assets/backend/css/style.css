@@ -1,0 +1,332 @@
+.poshtiban_upload_box {
+    width: 700px;
+    height: 550px;
+    margin: 50px auto;
+    -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.poshtiban_tooltip {
+    position: relative;
+}
+
+.poshtiban_tooltip:before {
+    position: absolute;
+    padding: 0 15px;
+    height: 32px;
+    line-height: 29px;
+    background: #5a5c60;
+    top: -30px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    transform: translateX(-50%);
+    opacity: 0;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    content: attr(data-tooltip);
+    font-size: 11px;
+    left: 50%;
+    border-radius: 4px;
+    color: #fff;
+    pointer-events: none;
+    z-index: 999;
+    text-shadow: none;
+    white-space: nowrap;
+}
+
+.poshtiban_tooltip:hover:before {
+    top: -40px;
+    opacity: 1;
+}
+
+.poshtiban_tooltip:after {
+    display: inline-block;
+    font: normal normal normal 14px/1 dashicons;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f140";
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    color: #5a5c60;
+    font-size: 20px;
+    z-index: 999;
+}
+
+.poshtiban_tooltip:hover:after {
+    opacity: 1;
+    top: -16px;
+}
+
+.mirror_row {
+    position: relative;
+}
+
+.mirror_row .spinner {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    margin: 0;
+}
+
+.mirror_row a.loading .spinner {
+    visibility: visible;
+}
+
+a.button.no_padding {
+    display: inline-block;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    font-size: 1.2em;
+    color: rgb(153, 153, 153);
+    padding: 4px 2px;
+}
+
+.woocommerce_options_panel .downloadable_files .poshtiban_files_table label[for="manually_insert"] {
+    margin: 0;
+    width: 17px;
+    position: static;
+}
+
+.downloadable_files.poshtiban_files.loading {
+    position: relative;
+}
+
+.downloadable_files.poshtiban_files > .spinner {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    z-index: 999;
+}
+
+.downloadable_files.poshtiban_files:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.downloadable_files.poshtiban_files.loading:after {
+    content: '';
+}
+
+.downloadable_files.loading > .spinner {
+    visibility: visible;
+}
+
+table.widefat.poshtiban_files_table .result {
+    margin-left: 10px;
+    line-height: 2;
+}
+
+table.widefat.poshtiban_files_table .result.error {
+    color: #ff2e13;
+}
+
+.media-frame-router.poshtiban_file_selector_router {
+    position: static;
+}
+
+.poshtiban_remote_upload {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.poshtiban_remote_upload input {
+    height: 28px;
+}
+
+.poshtiban_remote_upload .spinner {
+    float: none;
+    margin: -3px 0 0 5px;
+}
+
+.poshtiban_remote_upload.loading .spinner {
+    visibility: visible;
+}
+
+.poshtiban_woocommerce_upload #poshtiban_uploader {
+    position: static;
+}
+
+.wp-core-ui .button.poshtiban_toggle_uploader {
+    margin-top: 5px;
+}
+
+#TB_ajaxContent {
+    max-width: 96%;
+    width: 100%;
+    direction: ltr;
+    text-align: left;
+}
+
+/* original idea http://www.bootply.com/phf8mnMtpe */
+
+
+.tree {
+    min-height: 20px;
+}
+
+.tree li {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 5px 0 31px;
+    position: relative;
+}
+.tree > ul > li {
+    padding: 0 0 20px;
+}
+
+.tree li::before, .tree li::after {
+    content: '';
+    left: 10px;
+    position: absolute;
+    right: auto;
+}
+
+.tree li::before {
+    border-left: 1px solid #999;
+    bottom: 50px;
+    height: 100%;
+    top: 0;
+    width: 1px
+}
+
+.tree li::after {
+    border-top: 1px solid #999;
+    height: 20px;
+    top: 30px;
+    width: 20px
+}
+
+.tree li span.title {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 3px 8px;
+    text-decoration: none;
+    position: relative;
+}
+
+.tree li span.title .spinner {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+     -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    margin: 0;
+}
+
+.tree li.loading span.title .spinner {
+    visibility: visible;
+}
+
+
+.tree li.parent_li > span.title {
+    cursor: pointer
+}
+
+.tree > ul > li::before, .tree > ul > li::after {
+    border: 0
+}
+
+.tree li:last-child::before {
+    height: 30px
+}
+
+.tree li.parent_li > span:hover, .tree li.parent_li > span:hover + ul li span.title {
+    background: #eee;
+    border: 1px solid #94a0b4;
+    color: #000
+}
+.poshtiban_woocommerce_file_selector_sections {
+
+}
+.poshtiban_woocommerce_file_selector_sections .sections {
+    display: none;
+}
+.options_group.show_if_variation_downloadable label {
+    display: inline-block;
+    padding: 0 5px;
+}
+a.poshtiban_upload_to_cloud {
+    position: relative;
+}
+a.poshtiban_upload_to_cloud span.spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+a.poshtiban_upload_to_cloud.loading span.spinner {
+    visibility: visible;
+}
+a.poshtiban_restore_media {
+    position: relative;
+}
+a.poshtiban_restore_media span.dashicons {
+    /*margin-top: 5px;*/
+}
+a.poshtiban_restore_media span.spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+a.poshtiban_restore_media.loading span.spinner {
+    visibility: visible;
+}
+.tree li span.file {
+    cursor: pointer;
+}
+
+td.poshtiban.column-poshtiban a.poshtiban_tooltip {
+    padding: 5px;
+    height: 31px;
+    display: inline-block;
+    line-height: 1;
+    min-height: 0;
+}
